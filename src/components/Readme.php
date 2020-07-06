@@ -103,7 +103,7 @@ class Readme extends \hidev\base\Component
 
     public function getSection($file, $default = null)
     {
-        $tpl = '@hidev/views/' . Helper::file2template($file);
+        $tpl = dirname(__DIR__) . '/views/' . Helper::file2template($file);
         try {
             $res = $this->render($tpl);
         } catch (\Exception $e) {
