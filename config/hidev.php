@@ -30,6 +30,7 @@ return [
         'view' => [
             'theme' => [
                 'pathMap' => [
+                    //&&
                     '@hidev/views' => ['@hidev/readme/views'],
                 ],
             ],
